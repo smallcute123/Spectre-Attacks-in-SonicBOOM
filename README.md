@@ -1,0 +1,2 @@
+# Spectre-Attacks-in-SonicBOOM
+This repository contains a customized version of Spectre attacks to run on FPGA hardware that boots a Debian-based operating system (Linux kernel v5.18.18). The hardware platform is built using the SonicBOOM out-of-order RISC-V processor core.
