@@ -1,2 +1,4 @@
 # Spectre-Attacks-in-SonicBOOM
-This repository contains a customized version of Spectre attacks to run on FPGA hardware that boots a Debian-based operating system (Linux kernel v5.18.18). The hardware platform is built using the SonicBOOM out-of-order RISC-V processor core.
+This repository contains a customized implementation of Spectre attacks designed to run on FPGA hardware that boots a Debian-based operating system (Linux kernel v5.16.14). The hardware platform is built using the SonicBOOM out-of-order RISC-V processor core.
+
+Note: Based on our experimental results, Linux kernel version 5.18 and later may disable the use of the rdcycle instruction in user mode. As a result, this attack may not function correctly on such systems. For now, to get the attack working, you’ll need to use a Linux system image with a kernel version earlier than 5.18, or align your setup exactly with the version we used (v5.16.14), which we confirmed to work reliably on our FPGA board.
